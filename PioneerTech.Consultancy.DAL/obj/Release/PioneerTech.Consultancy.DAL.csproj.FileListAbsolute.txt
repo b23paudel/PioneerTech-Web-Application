@@ -1,0 +1,7 @@
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\PioneerTech.Consultancy.DAL\bin\Release\PioneerTech.Consultancy.DAL.dll
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\PioneerTech.Consultancy.DAL\bin\Release\PioneerTech.Consultancy.DAL.pdb
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\PioneerTech.Consultancy.DAL\obj\Release\PioneerTech.Consultancy.DAL.dll
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\PioneerTech.Consultancy.DAL\obj\Release\PioneerTech.Consultancy.DAL.pdb
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\PioneerTech.Consultancy.DAL\bin\Release\Pioneertech.Consultancy.model.dll
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\PioneerTech.Consultancy.DAL\bin\Release\Pioneertech.Consultancy.model.pdb
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\PioneerTech.Consultancy.DAL\obj\Release\PioneerTech.Consultancy.DAL.csprojResolveAssemblyReference.cache

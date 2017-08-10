@@ -1,0 +1,4 @@
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\Pioneertech.Consultancy.model\bin\Release\Pioneertech.Consultancy.model.dll
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\Pioneertech.Consultancy.model\bin\Release\Pioneertech.Consultancy.model.pdb
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\Pioneertech.Consultancy.model\obj\Release\Pioneertech.Consultancy.model.dll
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\Pioneertech.Consultancy.model\obj\Release\Pioneertech.Consultancy.model.pdb
