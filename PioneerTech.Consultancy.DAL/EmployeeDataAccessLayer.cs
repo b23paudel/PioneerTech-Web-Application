@@ -58,5 +58,19 @@ namespace PioneerTech.Consultancy.DAL
             mssqlconnection.Close();
             return row;
         }
+        public int EditEmployeeCompanyData(CompanyDetail companyDetail)
+        {
+            SqlConnection mssqlconnection = new SqlConnection("Data Source=DESKTOP-I3T5H70;" +
+                  "Initial Catalog=PioneerTech;" +
+                 "Integrated Security=true");
+            mssqlconnection.Open();
+            SqlCommand command = new SqlCommand("UPDATE CompanyDetail SET EmployerName = " +
+                            "'" + companyDetail.EmployerName + "',ContactNumber = " + companyDetail.ContactNumber + ",Location = '" + companyDetail.Location
+                            + "',Website = '" + companyDetail.Website + "'WHERE EmployeeID = " + companyDetail.EmployeeId, mssqlconnection);
+            int row = command.ExecuteNonQuery();
+            mssqlconnection.Close();
+            return row;
+            
+    }
     }
 }

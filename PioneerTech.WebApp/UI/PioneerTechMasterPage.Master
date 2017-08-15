@@ -5,18 +5,42 @@
 <html>
 <head runat="server">
     <title></title>
+     <asp:ContentPlaceHolder ID="head" runat="server">
+            </asp:ContentPlaceHolder>
    
     <link href="../Content/MainMasterPageStyleSheet.css" rel="stylesheet" />
+
+
 </head>
 <body>
     <form id="MainMasterPage" runat="server">
-            <div id ="Header" class ="header"></div>
-            <div id ="NavigationPanel" class="navigation"></div>
-            <div id ="Footer" class="footer"></div>
-            <div id ="Content" class ="content">
+            <div id ="Header" class ="header">
+                <h1 class ="h1">Pioneer Technologies Inc</h1>
+                <h2 class ="h2">Efficiency and Innovation</h2>
+            </div>
+            <div id ="NavigationPanel" class="navigation">
+                <asp:Menu ID="NavigationMenu" runat="server">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/UI/EmployeeDetail.aspx" Text="Employee Detail" Value="Employee Detail"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/UI/CompanyDetail.aspx" Text="Company Detail" Value="Company Detail"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/UI/ProjectDetail.aspx" Text="Project Detail" Value="Project Detail"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/UI/TechnicalDetail.aspx" Text="Technical Detail" Value="Technical Detail"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/UI/EducationalDetail.aspx" Text="Educational Detail" Value="Education Detail"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+
+    
+            </div>
+        <div id ="Content" class ="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
             </div>
+            <div id ="Footer" class="footer">
+                <p>Pioneer Technologies Inc. &copy; 2017</p>
+            </div>
+
+            
     </form>
 </body>
 </html>

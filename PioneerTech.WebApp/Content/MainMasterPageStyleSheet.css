@@ -1,22 +1,47 @@
-﻿.header {
+﻿
+.header {
     height: 20%;
     width: 100%;
     background-color: gray;
+    position: fixed;
+    top:0px;
 }
-body {
-    
+
+
+
+
+
+.navigation {
+    height: 60%;
+    width: 20%;
+    background-color: orange;
+    top: 20%;
+    position: fixed;
+    left:10px;
 }
+
+
+.content {
+    top: 20%;
+    height: 60%;
+    width: 80%;
+    left: 21%;
+    position: fixed;
+    background-color:lightblue;
+}
+
 .footer {
     height: 20%;
-    width : 100%;
+    width: 100%;
     background-color: gray;
+    position: fixed;
+    bottom: 0px
 }
-.navigation{
-    height: 60%;
-    width: 40%;
-    background-color: orange;
+.h1{
+    color: orange;
 }
-.content{
-    height: 60%;
-    width: 40%;
+.h2{
+    font-style:italic;
 }
+
+
