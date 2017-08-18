@@ -25,10 +25,10 @@ namespace PioneerTech.Consultancy.DAL
                  "Integrated Security=true");
             mssqlconnection.Open();
             SqlCommand command = new SqlCommand("INSERT INTO EmployeeDetail VALUES(" +
-                       "'" + employeeDetail.FirstName+ "','" + employeeDetail.LastName + "','" + employeeDetail.EmailId + "'," +
+                       "'" + employeeDetail.FirstName + "','" + employeeDetail.LastName + "','" + employeeDetail.EmailId + "'," +
                        employeeDetail.PhoneNumber + "," + employeeDetail.AlternatePhoneNumber + ",'" + employeeDetail.Address1 + "','" + employeeDetail.Address2 +
                        "','" + employeeDetail.HomeCountry + "','" + employeeDetail.CurrentCountry + "'," + employeeDetail.ZipCode + ")", mssqlconnection);
-            int row =command.ExecuteNonQuery();
+            int row = command.ExecuteNonQuery();
             mssqlconnection.Close();
             return row;
         }
@@ -64,13 +64,60 @@ namespace PioneerTech.Consultancy.DAL
                   "Initial Catalog=PioneerTech;" +
                  "Integrated Security=true");
             mssqlconnection.Open();
-            SqlCommand command = new SqlCommand("UPDATE CompanyDetail SET EmployerName = " +
-                            "'" + companyDetail.EmployerName + "',ContactNumber = " + companyDetail.ContactNumber + ",Location = '" + companyDetail.Location
-                            + "',Website = '" + companyDetail.Website + "'WHERE EmployeeID = " + companyDetail.EmployeeId, mssqlconnection);
+            string sql = $"UPDATE [CompanyDetail] SET[EmployerName] =  '{companyDetail.EmployerName}',[ContactNumber] = {companyDetail.ContactNumber},[Location] = '{companyDetail.Location}',[Website] =' {companyDetail.Website}' WHERE EmployeeID= {companyDetail.EmployeeId}";
+            SqlCommand command = new SqlCommand(sql, mssqlconnection);
             int row = command.ExecuteNonQuery();
             mssqlconnection.Close();
             return row;
-            
-    }
+        }
+        /*
+        public int EditEmployeeData(EmployeeDetail employeeDetail)
+        {
+            SqlConnection mssqlconnection = new SqlConnection("Data Source=DESKTOP-I3T5H70;" +
+                  "Initial Catalog=PioneerTech;" +
+                 "Integrated Security=true");
+            mssqlconnection.Open();
+            string sql = $"UPDATE [EmployeeDetail] SET[FirstName] =  '{employeeDetail.FirstName}'," +
+                $"[LastName] = '{employeeDetail.LastName}'," +
+                $"[Email] = '{employeeDetail.EmailId}'," +
+                $"[ContactNumber] = {employeeDetail.PhoneNumber}," +
+                $"[AlternateContactNumber] = {employeeDetail.AlternatePhoneNumber}," +
+                $"[Address] =' {employeeDetail.Address1}'," +
+                $"[AlternateAddress] =' {employeeDetail.Address2}'," +
+                $"[HomeCountry] =' {employeeDetail.HomeCountry}'," +
+                $"[CurrentCountry] =' {employeeDetail.CurrentCountry}'," +
+                $"[ZipCode] = {employeeDetail.ZipCode} " +
+                $"WHERE EmployeeID= {employeeDetail.EmployeeId}";
+            SqlCommand command = new SqlCommand(sql, mssqlconnection);
+            int row = command.ExecuteNonQuery();
+            mssqlconnection.Close();
+            return row;
+        }*/
+        public int SaveEmployeeTechnicalData(TechnicalDetail technicalDetail)
+        {
+            SqlConnection mssqlconnection = new SqlConnection("Data Source=DESKTOP-I3T5H70;" +
+                  "Initial Catalog=PioneerTech;" +
+                 "Integrated Security=true");
+            mssqlconnection.Open();
+            SqlCommand command = new SqlCommand("INSERT INTO TechnicalDetail VALUES(" +
+                           "'" + technicalDetail.UI + "','" + technicalDetail.ProgarmmingLanguage + "','" + technicalDetail.Database +"'," + technicalDetail.EmployeeId + ")", mssqlconnection);
+            int row = command.ExecuteNonQuery();
+            mssqlconnection.Close();
+            return row;
+
+        }
+        public int SaveEmployeeEducationalData(EducationalDetail educationalDetail)
+        {
+            SqlConnection mssqlconnection = new SqlConnection("Data Source=DESKTOP-I3T5H70;" +
+                  "Initial Catalog=PioneerTech;" +
+                 "Integrated Security=true");
+            mssqlconnection.Open();
+            SqlCommand command = new SqlCommand("INSERT INTO EducationDetail VALUES(" +
+                           "'" + educationalDetail.CourseType + "'," + educationalDetail.YearOfPass + ",'" + educationalDetail.Specialization + "'," + educationalDetail.EmployeeId + ")", mssqlconnection);
+            int row = command.ExecuteNonQuery();
+            mssqlconnection.Close();
+            return row;
+
+        }
     }
 }

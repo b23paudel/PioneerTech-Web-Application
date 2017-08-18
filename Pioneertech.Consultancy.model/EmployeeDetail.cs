@@ -19,8 +19,5 @@ namespace Pioneertech.Consultancy.model
         public string CurrentCountry { get; set; }
         public int ZipCode { get; set; }
 
-
-
-        
     }
 }

@@ -2,3 +2,8 @@ C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\Pioneer
 C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\Pioneertech.Consultancy.model\bin\Debug\Pioneertech.Consultancy.model.pdb
 C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\Pioneertech.Consultancy.model\obj\Debug\Pioneertech.Consultancy.model.dll
 C:\Users\Bibek\Documents\Visual Studio 2017\Projects\Pioneer.Consultancy\Pioneertech.Consultancy.model\obj\Debug\Pioneertech.Consultancy.model.pdb
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\PioneerTech.WebApp\Pioneertech.Consultancy.model\bin\Debug\Pioneertech.Consultancy.model.dll
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\PioneerTech.WebApp\Pioneertech.Consultancy.model\bin\Debug\Pioneertech.Consultancy.model.pdb
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\PioneerTech.WebApp\Pioneertech.Consultancy.model\obj\Debug\Pioneertech.Consultancy.model.csprojResolveAssemblyReference.cache
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\PioneerTech.WebApp\Pioneertech.Consultancy.model\obj\Debug\Pioneertech.Consultancy.model.dll
+C:\Users\Bibek\Documents\Visual Studio 2017\Projects\PioneerTech.WebApp\Pioneertech.Consultancy.model\obj\Debug\Pioneertech.Consultancy.model.pdb

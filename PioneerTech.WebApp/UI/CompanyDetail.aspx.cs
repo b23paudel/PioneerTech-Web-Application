@@ -12,7 +12,7 @@ namespace PioneerTech.WebApp.UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
 
         protected void Button2_Click(object sender, EventArgs e)
@@ -52,13 +52,18 @@ namespace PioneerTech.WebApp.UI
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+        }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
             Pioneertech.Consultancy.model.CompanyDetail companyDetail = new Pioneertech.Consultancy.model.CompanyDetail
             {
                 EmployerName = EmployerNameTextBox.Text,
-                ContactNumber = Convert.ToInt64(EmployerContactNumberTextBox.Text),
+                ContactNumber = Convert.ToInt32(EmployerContactNumberTextBox.Text),
                 Location = CompanyLocationTextBox.Text,
                 Website = CompanyWebsiteTextBox.Text,
                 EmployeeId = Convert.ToInt32(EmployeeIDTextBox.Text)
+
 
             };
             EmployeeDataAccessLayer companyDAL = new EmployeeDataAccessLayer();
@@ -70,9 +75,15 @@ namespace PioneerTech.WebApp.UI
             }
             else
             {
-                string display = "Employee Company Data not . Please try again.";
+                string display = "Employee Company Data not updated . Please try again.";
                 ClientScript.RegisterStartupScript(this.GetType(), "Operation was", "alert('" + display + "');", true);
             }
+
+        }
+
+        protected void EmployeeIDTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

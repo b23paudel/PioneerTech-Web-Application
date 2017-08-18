@@ -13,5 +13,6 @@ namespace Pioneertech.Consultancy.model
         public string Location { get; set; }
         public string Website { get; set; }
         public int EmployeeId { get; set; }
+       
     }
 }
